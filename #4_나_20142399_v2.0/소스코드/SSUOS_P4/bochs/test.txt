@@ -1,0 +1,61 @@
+Real Mode
+Protected Mode
+SSUOS main start!!!!
+          ______    ______   __    __         ______    ______  
+         /      \  /      \ /  |  /  |       /      \  /      \ 
+        /$$$$$$  |/$$$$$$  |$$ |  $$ |      /$$$$$$  |/$$$$$$  |
+        $$ \__$$/ $$ \__$$/ $$ |  $$ |      $$ |  $$ |$$ \__$$/ 
+        $$      \ $$      \ $$ |  $$ |      $$ |  $$ |$$      \ 
+         $$$$$$  | $$$$$$  |$$ |  $$ |      $$ |  $$ | $$$$$$  |
+        /  \__$$ |/  \__$$ |$$ \__$$ |      $$ \__$$ |/  \__$$ |
+        $$    $$/ $$    $$/ $$    $$/       $$    $$/ $$    $$/ 
+         $$$$$$/   $$$$$$/   $$$$$$/         $$$$$$/   $$$$$$/  
+****************Made by OSLAB in SoongSil University*********************
+contributors : Yunkyu Lee  , Minwoo Jang  , Sanghun Choi , Eunseok Choi
+               Hyunho Ji   , Giwook Kang  , Kisu Kim     , Seonguk Lee 
+               Gibeom Byeon, Jeonghwan Lee, Kyoungmin Kim, Myungjoon Shon
+               Jinwoo Lee, Hansol Lee, Mhanwoo Heo
+************************  Professor. Jiman Hong  ************************
+                                                                  
+Memory Detecting
+PIT Initialization
+System call Initialization
+idtr size : 2047 address : 0x40000
+Timer Handler Registration
+Keyboard Handler Registration
+System Call Handler Registration
+Interrupt Initialization
+32511 pages available in memory pool.
+Interrupt Initialization
+Palloc Initialization
+-PE=32768, PT=32
+-page dir=101000 page tbl=102000
+Paging Initialization
+Process Initialization
+========== initialization complete ==========
+#=   1 p=  50 c=   0 u=   0, #=   2 p=  50 c=   0 u=   0, #=   3 p=  30 c=   0 u=   0
+Selected # = 3
+Proc 3 I/O at 50
+#=   1 p=  50 c=   0 u=   0, #=   2 p=  50 c=   0 u=   0
+Selected # = 1
+#=   1 p=  59 c=  60 u=  60, #=   2 p=  50 c=   0 u=   0, #=   3 p=  33 c=   0 u=  50
+Selected # = 3
+Proc 3 I/O at 100
+#=   1 p=  59 c=  60 u=  60, #=   2 p=  50 c=   0 u=   0
+Selected # = 2
+#=   1 p=  59 c=  60 u=  60, #=   2 p=  59 c=  60 u=  60, #=   3 p=  36 c=   0 u= 100
+Selected # = 3
+#=   1 p=  59 c=  60 u=  60, #=   2 p=  59 c=  60 u=  60
+Selected # = 1
+#=   1 p=  68 c=  60 u= 120, #=   2 p=  59 c=  60 u=  60
+Selected # = 2
+Proc 2 I/O at 100
+#=   1 p=  68 c=  60 u= 120
+Selected # = 1
+Proc 1 I/O at 140
+#=   2 p=  62 c=   0 u= 100
+Selected # = 2
+#=   1 p=  68 c=   0 u= 140
+Selected # = 1
+#=   1 p=  77 c=  60 u= 200
+Selected # = 1

@@ -1,0 +1,129 @@
+Real Mode
+Protected Mode
+SSUOS main start!!!!
+          ______    ______   __    __         ______    ______  
+         /      \  /      \ /  |  /  |       /      \  /      \ 
+        /$$$$$$  |/$$$$$$  |$$ |  $$ |      /$$$$$$  |/$$$$$$  |
+        $$ \__$$/ $$ \__$$/ $$ |  $$ |      $$ |  $$ |$$ \__$$/ 
+        $$      \ $$      \ $$ |  $$ |      $$ |  $$ |$$      \ 
+         $$$$$$  | $$$$$$  |$$ |  $$ |      $$ |  $$ | $$$$$$  |
+        /  \__$$ |/  \__$$ |$$ \__$$ |      $$ \__$$ |/  \__$$ |
+        $$    $$/ $$    $$/ $$    $$/       $$    $$/ $$    $$/ 
+         $$$$$$/   $$$$$$/   $$$$$$/         $$$$$$/   $$$$$$/  
+****************Made by OSLAB in SoongSil University*********************
+contributors : Yunkyu Lee  , Minwoo Jang  , Sanghun Choi , Eunseok Choi
+               Hyunho Ji   , Giwook Kang  , Kisu Kim     , Seonguk Lee 
+               Gibeom Byeon, Jeonghwan Lee, Kyoungmin Kim, Myungjoon Shon
+               Jinwoo Lee  , Hansol Lee   , Mhanwoo Heo, Yongmin Kim,  Yena Lee
+               Heejin Kim, Kichoel Park, Younggwan Kim
+************************  Professor. Jiman Hong  ************************
+                                                                  
+Memory Detecting
+-Memory size = 131072 Kbytes
+PIT Intialization
+System call Intialization
+idtr size : 2047 address : 0x40000
+Timer Handler Registration
+Keyboard Handler Registeration
+System Call Handler Registeration
+Interrupt Initialization
+Interrupt Initialization
+Palloc Initialization
+palloc at init_paging1
+-------kernel area
+page index : 0, page table index : 257
+palloc at init_paging()2
+-------kernel area
+page index : 0, page table index : 258
+mem_size : 139d0
+NUM_PE : 512
+Paging Initialization
+init proc : 0
+pd : 101000
+Process Intialization
+ATA device Intialization
+page fault = 3e1000
+pdi : 0, pti : 993
+pta : 102000, pti : 993
+pf end
+page index : 0, page table index : 993
+page fault = 3e2000
+pdi : 0, pti : 994
+pta : 102000, pti : 994
+pf end
+page index : 0, page table index : 994
+page fault = 3e3000
+pdi : 0, pti : 995
+pta : 102000, pti : 995
+pf end
+page fault = 3e4000
+pdi : 0, pti : 996
+pta : 102000, pti : 996
+pf end
+page index : 0, page table index : 995
+one_page1 = 3e1000
+one_page2 = 3e2000
+two_page1 = 3e3000
+=----------------------------------=
+page index : 0, page table index : 993
+page index : 0, page table index : 994
+page index : 0, page table index : 995
+one_page1 = 3e1000
+one_page2 = 3e2000
+two_page1 = 3e3000
+=----------------------------------=
+page index : 0, page table index : 994
+page fault = 3e5000
+pdi : 0, pti : 997
+pta : 102000, pti : 997
+pf end
+page index : 0, page table index : 995
+one_page1 = 3e1000
+one_page2 = 3e2000
+three_page = 3e3000
+========== initialization complete ==========
+pid 1 is createing...
+palloc at proc_create
+-------kernel area
+page index : 0, page table index : 259
+pd create
+palloc at pd_create
+-------kernel area
+page index : 0, page table index : 260
+pd_copy s : 0, e : 8
+palloc at pt_copy1
+-------kernel area
+page index : 0, page table index : 261
+first pte s : 256, pte e : 0
+final pte s : 0, pte e : 1024
+pid 2 is createing...
+palloc at proc_create
+-------kernel area
+page index : 0, page table index : 262
+pd create
+palloc at pd_create
+-------kernel area
+page index : 0, page table index : 263
+pd_copy s : 0, e : 8
+palloc at pt_copy1
+-------kernel area
+page index : 0, page table index : 264
+first pte s : 256, pte e : 0
+final pte s : 0, pte e : 1024
+kerenl1_is created
+kernel2 is created
+pid 3 is createing...
+palloc at proc_create
+-------kernel area
+page index : 0, page table index : 265
+pd create
+palloc at pd_create
+-------kernel area
+page index : 0, page table index : 266
+pd_copy s : 0, e : 8
+palloc at pt_copy1
+-------kernel area
+page index : 0, page table index : 267
+first pte s : 256, pte e : 0
+final pte s : 0, pte e : 1024
+id : 
