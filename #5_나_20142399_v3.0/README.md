@@ -28,8 +28,7 @@ Level Hash는 key값이 같은 원소들이 생기는 collision에 대응하기 
 
 기존의 level_bucket 구조체에 int num 변수를 추가로 선언해 주었다. 이 변수는 현재 슬롯에 얼마나 많은 원소가 있는지 확인하기 위한 변수이다. 따라서 원소가 삽입되고 삭제될 때 이 변수의 값은 수정된다.
 
-
-＊ #### hasing.c
+- #### hasing.c
 
 #### 1. void init_hash_table(void)
 
@@ -48,7 +47,7 @@ Level Hash는 key값이 같은 원소들이 생기는 collision에 대응하기 
  hash_table의 원소를 삭제하기 위한 함수이다. 삭제하려는 page의 주소를 addr인자로 받는다. F_IDX()와 S_IDX()를 이용하여 해당 원소가 들어갈 수 있는 top level bucket과 bottom level bucket, 총 4개의 버킷의 슬롯을 오름차순으로 확인하여 key, value 값이 같고, token이 1인 경우 token을 0으로 바꿔 해당 슬롯이 사용중이지 않음을 설정함으로써 원소를 삭제한다.
  
 
-＊ #### palloc.c
+- #### palloc.c
 
 #### 1. uint32_t *palloc_get_multiple (size_t page_cnt)
 
